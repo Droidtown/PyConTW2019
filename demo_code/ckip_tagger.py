@@ -8,9 +8,9 @@ from ckiptagger import data_utils, construct_dictionary, WS, POS, NER
 
 startTime = time.time()
 G_modelPath = "{}/data".format(os.path.dirname(os.path.abspath(__file__)))
-ws = WS("./data")
-pos = POS("./data")
-ner = NER("./data")
+ws = WS(G_modelPath)
+pos = POS(G_modelPath)
+ner = NER(G_modelPath)
 
 print("\n{} CKIPtagger 模型載入完成時間: {} 秒 {}".format('='*4, round(time.time()-startTime, 4), '='*4))
 
